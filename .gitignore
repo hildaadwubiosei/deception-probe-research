@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large / generated artifacts - keep the repo lightweight.
+# Re-generate these by running notebooks/01_full_pipeline.ipynb.
+experiments/checkpoints/*.pt
+experiments/results/*.npz
+experiments/results/*.pkl
+experiments/results/final_frozen/*.pt
+experiments/results/final_frozen/*.pkl
+data/processed/*.json
+
+# Keep directory structure in git even though contents are ignored
+!experiments/checkpoints/.gitkeep
+!experiments/results/.gitkeep
+!data/processed/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
